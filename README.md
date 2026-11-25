@@ -1,8 +1,8 @@
-# <your project's name>
+# <Silly volume slider project>
 
 <!-- This README is the front door of your project: the gallery shows its first lines. -->
 
-## what it is
+## A volume slider that is as silly as possible
 
 <one or two sentences: what is your evil input?>
 

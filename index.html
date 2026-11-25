@@ -3,8 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>my evil input</title>
-<text>does this work?</text>
+<title>"I can change the title :)"</title>
 <style>
   /* Everything you make goes inside #stage: exactly 800 × 400 pixels. The gallery shows
      this box (shrunk to fit), so anything outside it won't be seen. */
@@ -12,13 +11,13 @@
   #stage {
     width: 800px; height: 400px; overflow: hidden; position: relative;
     display: grid; place-items: center; text-align: center;
-    background: #23243d;
+    background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F170644349%2Fphoto%2Fsunrise-over-sea.jpg%3Fs%3D612x612%26w%3D0%26k%3D20%26c%3DY2MaLGFQudhvUgphXaBg__0qWzTAysbnmWcuhfB2-xk%3D&f=1&nofb=1&ipt=913323de5d6c94bdd5d634dc526d9abb0496c74eb1d34dd1c61d50335a553b92&ipo=images");
   }
 
   /* ---- the example below: delete it and build your own ---- */
   .vol { font-size: 64px; margin: 0; }
-  button { font: inherit; color: inherit; background: #3f4168; border: 0; border-radius: 6px; padding: .6rem 1.2rem; cursor: pointer; }
-  .hint { color: #8d8aa6; font-size: 14px; }
+  button { font: inherit; color: inherit; background: #333552; border: 0; border-radius: 6px; padding: .6rem 1.2rem; cursor: pointer; }
+  .hint { color: #14a821; font-size: 14px; }
 </style>
 </head>
 <body>
@@ -37,6 +36,7 @@
   document.getElementById('pump').addEventListener('click', () => {
     volume = Math.min(100, volume + 7);
     out.textContent = Math.round(volume);
+
   });
   setInterval(() => {
     volume = Math.max(0, volume - 1);
